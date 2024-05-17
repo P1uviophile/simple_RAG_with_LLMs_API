@@ -7,6 +7,7 @@ from fastapi import FastAPI, Request
 app = FastAPI()
 
 
+# 选择的是https://open.bigmodel.cn/dev/api智谱清言的大模型API 可以换成本地部署的大模型api或其他平台的大模型api
 @app.post("/")
 async def create_item(request: Request):
     json_post_raw = await request.json()
@@ -16,7 +17,7 @@ async def create_item(request: Request):
     history = json_post_list.get('history')
     now = datetime.datetime.now()
     time = now.strftime("%Y-%m-%d %H:%M:%S")
-    zhipuai.api_key = "bd030d2acb22b8e5658cf965b39b2fbb.Xt4PbIeFXqDagEbp"
+    zhipuai.api_key = "请于此处填入api_key"
     response = zhipuai.model_api.invoke(
         model="chatglm_6b",
         prompt=[
