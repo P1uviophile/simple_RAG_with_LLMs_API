@@ -20,8 +20,10 @@ neo4j版本:4.2.4
 
 3.运行neo4j目录下 生成知识图谱.py 
 
-4.运行 ComChatGLMAPI.py 和 main.py
+4.更换ComChatGLMAPI.py内的ApiKEY(智谱AI开放平台),或重写自选的企业大模型API
 
-5.浏览器打开 http://127.0.0.1:7860 即可使用
+5.运行 ComChatGLMAPI.py 和 main.py
 
-6.若想更换API为本地部署大模型请参照ComChatGLMAPI.py中API格式提供本地部署大模型的API
+6.浏览器打开 http://127.0.0.1:7860 即可使用
+
+7.若想更换API为本地部署大模型请参照ComChatGLMAPI.py中API格式提供本地部署大模型的API
