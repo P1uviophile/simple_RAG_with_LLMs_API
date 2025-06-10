@@ -36,9 +36,9 @@ neo4j版本:4.2.4
 
 #### 0.注:关于以下1-2点: 用于其他外挂知识库的话neo4j的知识图谱相关代码可以不管或者自己重写相关API和代码,只是少了根据问题推荐相关知识点的功能,用LLM一样能实现且实现得更好...
 
-1.安装并启动neo4j数据库并添加管理员角色:账号root 密码jk18889903808
+1.安装并启动neo4j数据库并添加管理员角色:账号root 密码123456
 
-​	(或将neo4j下的py文件中的 graph = Graph("http://localhost:7474/browser/", auth=('root', 'jk18889903808') 替换成你的neo4j数据库中的账号密码)
+​	(或将neo4j下的py文件中的 graph = Graph("http://localhost:7474/browser/", auth=('root', '123456') 替换成你的neo4j数据库中的账号密码)
 
 2.运行neo4j目录下 生成知识图谱.py 
 
