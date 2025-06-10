@@ -15,7 +15,7 @@ relationship_matcher = None
 
 try:
     # 尝试连接Neo4j数据库
-    graph = Graph("http://localhost:7474/browser/", auth=('root', 'jk18889903808'))
+    graph = Graph("http://localhost:7474/browser/", auth=('root', '123456'))
     node_matcher = NodeMatcher(graph)
     relationship_matcher = RelationshipMatcher(graph)
 
@@ -105,7 +105,7 @@ def connect_neo4j(neo4j):
     if neo4j:
         try:
             # 尝试连接Neo4j数据库
-            graph = Graph("http://localhost:7474/browser/", auth=('root', 'jk18889903808'))
+            graph = Graph("http://localhost:7474/browser/", auth=('root', '123456'))
             node_matcher = NodeMatcher(graph)
             relationship_matcher = RelationshipMatcher(graph)
             print("已连接neo4j")
